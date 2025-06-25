@@ -16,7 +16,7 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['31.97.174.51']
+ALLOWED_HOSTS = ['31.97.174.51', 'pedefacil.app']
 
 
 # Application definition
