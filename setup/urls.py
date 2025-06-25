@@ -10,7 +10,7 @@ from rest_framework_simplejwt.views import (
 )
 
 urlpatterns = [
-    path('', landing_page, name='landing_page'),
+    path('landing', landing_page, name='landing_page'),
 
     path('admin/', admin.site.urls),
 

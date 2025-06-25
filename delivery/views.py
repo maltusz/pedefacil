@@ -1036,15 +1036,6 @@ def products(request, id=None):
         return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
     
 # View para listar, cadastrar e editar promoções    
-import json
-from rest_framework.decorators import api_view, permission_classes
-from rest_framework.permissions import IsAuthenticated
-from rest_framework.response import Response
-from rest_framework import status
-from django.shortcuts import get_object_or_404
-from .models import Promocao, Estabelecimento
-from .serializers import PromocaoSerializer
-
 @api_view(['GET', 'POST', 'PUT'])
 @permission_classes([IsAuthenticated])
 def promo(request, id=None):
