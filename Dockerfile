@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
     libcairo2 \
     libmariadb3 \
     libmariadb-dev-compat \
+    mariadb-client \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
