@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
     libmariadb3 \
     libmariadb-dev-compat \
     mariadb-client \
+    nginx \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
